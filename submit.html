@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Submit Your Story</title>
+  <style>
+    body {
+      background-color: #0d0d0d;
+      color: #fff;
+      font-family: 'Georgia', serif;
+      padding: 20px;
+    }
+
+    h1 {
+      text-align: center;
+      color: #ff4444;
+      margin-bottom: 30px;
+    }
+
+    form {
+      max-width: 600px;
+      margin: 0 auto;
+      background: #1a1a1a;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px #111;
+    }
+
+    label {
+      display: block;
+      margin: 15px 0 5px;
+      color: #ff9999;
+    }
+
+    input, textarea {
+      width: 100%;
+      padding: 10px;
+      border: none;
+      border-radius: 5px;
+      background: #333;
+      color: #fff;
+    }
+
+    textarea {
+      height: 150px;
+    }
+
+    button {
+      margin-top: 20px;
+      padding: 10px 20px;
+      background-color: #ff4444;
+      border: none;
+      border-radius: 5px;
+      color: #fff;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #cc0000;
+    }
+
+    .back-link {
+      display: block;
+      text-align: center;
+      margin-top: 20px;
+      color: #aaa;
+      text-decoration: none;
+    }
+
+    .back-link:hover {
+      color: #fff;
+    }
+  </style>
+</head>
+<body>
+  <h1>Submit Your Haunted Story</h1>
+  <form>
+    <label for="name">Your Name</label>
+    <input type="text" id="name" required>
+
+    <label for="email">Your Email</label>
+    <input type="email" id="email" required>
+
+    <label for="title">Story Title</label>
+    <input type="text" id="title" required>
+
+    <label for="story">Your Story</label>
+    <textarea id="story" required></textarea>
+
+    <button type="submit">Submit</button>
+  </form>
+
+  <a href="index.html" class="back-link">Back to Home</a>
+</body>
+</html>
